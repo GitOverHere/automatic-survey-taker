@@ -89,11 +89,13 @@ document.onkeypress = function(e) {
                 alert("Robofiller OFF")
                 on = false;
             }
-
+         
         }
-		 if (e.keyCode == 114) {
+		 
+		if(on){
+		if (e.keyCode == 114) {
             if (auto_advance == false) {
-                alert("Robofiller ON")
+                alert("Auto Advance On")
                 auto_advance = true;
             }
 
@@ -103,7 +105,7 @@ document.onkeypress = function(e) {
             }
 
         }
-		
+		}
 		
 		
 		if(!document.body.innerText.match(/none/gi) || document.body.innerText.match(/prefer/gi)){
